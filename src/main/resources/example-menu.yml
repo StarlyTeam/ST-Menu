@@ -1,0 +1,69 @@
+테스트:
+
+  # GUI 타이틀
+  title: 테스트
+
+  # GUI 사이즈 [1~6]
+  size: 6
+
+  # GUI가 열때 실행되는 설정
+  open_settings:
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  items:
+
+    # 가상이름 (중복 불가)
+    "예시1":
+
+      # 아이템 종류 (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)
+      material: GRASS
+
+      # 아이템 개수
+      amount: 1
+
+      # 아이템 슬롯 (1~54) (중복 불가능)
+      slot:
+        - 1
+        - 2
+        - 3
+        - 4
+
+      # 아이템 메타
+      meta:
+
+        # 아이템 이름
+        displayName: "예시 아이템이름 1"
+
+        # 아이템 로어
+        lores:
+          - "예시 로어 1"
+          - "예시 로어 2"
+
+      # 좌클릭시 실행되는 명령어
+      left_click_commands:
+        - '[player] say 예시 1 좌클릭1'
+        - '[sound] ENTITY_PLAYER_LEVELUP'
+
+      # 우클릭시 실행되는 명령어
+      right_click_commands:
+        - '[console] say 우클릭 버킷 명령어'
+
+
+    "예시2":
+      material: GRASS_BLOCK
+      amount: 1
+      slot:
+        - 10
+        - 12
+      meta:
+        displayName: "예시 아이템이름 2"
+        lores:
+          - "예시 로어 1"
+          - "예시 로어 2"
+
+      left_click_commands:
+        - '[player] say 좌클릭2 테스트'
+      right_click_commands:
+        - '[player] say 우클릭2 테스트'
+        - '[sound] ENTITY_PLAYER_LEVELUP'
+
+

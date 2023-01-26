@@ -1,0 +1,14 @@
+name: ST-Menu
+main: net.starly.menu.MenuMain
+author: Starly Team
+website: https://starly.kr/discord
+
+description: Menu Plugin.
+
+api-version: 1.13
+version: 1.0
+
+commands:
+  menu:
+    aliases: [ 메뉴 ]
+    description: 메뉴 명령어
