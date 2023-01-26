@@ -3,8 +3,8 @@
   # GUI 타이틀
   title: 테스트
 
-  # GUI 사이즈 [1~6]
-  size: 6
+  # GUI 사이즈 [ 9, 18, 27, 36, 45, 54 ]
+  size: 54
 
   # GUI가 열때 실행되는 설정
   open_settings:
@@ -65,5 +65,3 @@
       right_click_commands:
         - '[player] say 우클릭2 테스트'
         - '[sound] ENTITY_PLAYER_LEVELUP'
-
-

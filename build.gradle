@@ -23,3 +23,7 @@ dependencies {
     // OTHER DEPENDENCIES
     compileOnly "net.starly.core:ST-Core:1.5.5"
 }
+
+jar {
+    destinationDirectory.set(file('C:\\Users\\Yangd\\대영\\마인크래프트\\서버\\마인크래프트\\개발용\\1.19.2\\plugins')) // Build Section
+}

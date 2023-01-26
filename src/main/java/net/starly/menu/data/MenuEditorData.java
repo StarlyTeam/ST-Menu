@@ -14,7 +14,7 @@ public class MenuEditorData {
         ConfigurationSection section = config.getConfig().getConfigurationSection(path);
         Inventory inventory;
         try {
-            inventory = Bukkit.createInventory(null, section.getInt("size") * 9, section.getString("title"));
+            inventory = Bukkit.createInventory(null, section.getInt("size"), section.getString("title"));
         } catch (Exception e) {
             throw new IllegalArgumentException("인벤토리를 불러오는데 실패했습니다. 경로: " + path);
         }

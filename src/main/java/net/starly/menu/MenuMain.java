@@ -36,6 +36,7 @@ public class MenuMain extends JavaPlugin {
         // CONFIG
         config = new Config("config", this);
         config.loadDefaultConfig();
+        new Config("example-menu", this).loadDefaultConfig();
         config.setPrefix("messages.prefix");
 
         // COMMAND

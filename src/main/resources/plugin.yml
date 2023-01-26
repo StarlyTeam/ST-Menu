@@ -8,6 +8,8 @@ description: Menu Plugin.
 api-version: 1.13
 version: 1.0
 
+softdepend: [ ST-Core ]
+
 commands:
   menu:
     aliases: [ 메뉴 ]

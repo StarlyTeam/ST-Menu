@@ -21,14 +21,14 @@ public class MenuTab implements TabCompleter {
         Player player = (Player) sender;
 
         if (args.length == 1) {
-            if (player.isOp()) return Arrays.asList("생성", "삭제", "열기");
-            else return Arrays.asList("열기");
+            if (player.isOp()) return Arrays.asList("생성", "제거", "열기", "리로드", "도움말");
+            else return Arrays.asList("열기", "도움말");
         }
 
         if (args.length == 2) {
             if (player.isOp()) {
-                if (args[0].equals("생성")) return Arrays.asList("<워프 이름>");
-                else if (args[0].equals("열기") || args[0].equals("삭제"))
+                if (args[0].equals("생성")) return Arrays.asList("<메뉴 이름>");
+                else if (args[0].equals("열기") || args[0].equals("제거"))
                     return Arrays.asList(new Config("menu/", MenuMain.getPlugin()).getFileNames().toArray(new String[0]));
             } else {
                 if (args[0].equals("열기"))

@@ -81,7 +81,7 @@ public class MenuCmd implements CommandExecutor {
                 }
 
                 menu.create();
-                player.sendMessage(config.getMessage("messages.menu.create").replace("{menu}", menuName));
+                player.sendMessage(config.getMessage("messages.menu.create").replace("{name}", menuName));
                 return true;
             }
 
@@ -111,7 +111,7 @@ public class MenuCmd implements CommandExecutor {
                 }
 
                 menu.delete();
-                player.sendMessage(config.getMessage("messages.menu.remove").replace("{menu}", menuName));
+                player.sendMessage(config.getMessage("messages.menu.remove").replace("{name}", menuName));
                 return true;
             }
 
