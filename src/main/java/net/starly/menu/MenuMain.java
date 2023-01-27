@@ -1,5 +1,6 @@
 package net.starly.menu;
 
+import net.starly.core.bstats.Metrics;
 import net.starly.core.data.Config;
 import net.starly.menu.command.MenuCmd;
 import net.starly.menu.command.tabcomplete.MenuTab;
@@ -32,6 +33,7 @@ public class MenuMain extends JavaPlugin {
         }
 
         plugin = this;
+        new Metrics(this, 17551);
 
         // CONFIG
         config = new Config("config", this);
