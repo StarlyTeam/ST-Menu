@@ -18,8 +18,8 @@ public class PlayerSwapHandItemsListener implements Listener {
         if (player.isSneaking()) {
             if (config.getBoolean("others.shiftF.enable")) {
                 RunCommandUtil.runCommand(player, config.getString("others.shiftF.open_settings"));
+                event.setCancelled(true);
             }
-            event.setCancelled(true);
         }
     }
 }

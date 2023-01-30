@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2637004-0a58-4bb4-968c-ff64ceaa5445" name="Changes" comment="feat: gradle">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/starly/menu/event/PlayerSwapHandItemsListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b2637004-0a58-4bb4-968c-ff64ceaa5445" name="Changes" comment="feat: shift + f">
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/starly/menu/MenuMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/starly/menu/MenuMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/starly/menu/command/MenuCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/starly/menu/command/MenuCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/starly/menu/command/tabcomplete/MenuTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/starly/menu/command/tabcomplete/MenuTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/starly/menu/data/MenuData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/starly/menu/data/MenuData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +150,7 @@
       <workItem from="1674883098947" duration="1998000" />
       <workItem from="1674987251466" duration="827000" />
       <workItem from="1675065307500" duration="3232000" />
-      <workItem from="1675098601963" duration="404000" />
+      <workItem from="1675098601963" duration="710000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Menu">
       <created>1674734703924</created>
@@ -180,7 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674738321547</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: shift + f">
+      <created>1675099204049</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675099204049</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: shift + f">
+      <created>1675099302069</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675099302069</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +196,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: Menu" />
     <MESSAGE value="feat: gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: gradle" />
+    <MESSAGE value="feat: shift + f" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: shift + f" />
   </component>
 </project>

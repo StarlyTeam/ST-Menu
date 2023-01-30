@@ -9,7 +9,11 @@ public class RunCommandUtil {
         if (line.contains("[player]")) {
             player.performCommand(line.replace("[player] ", ""));
         } else if (line.contains("[console]")) {
-            Bukkit.dispatchCommand(Bukkit.getServer().getConsoleSender(), line.replace("[console] ", ""));
+            Bukkit.dispatchCommand(Bukkit.getServer().getConsoleSender(), line.replace("[console] ", "")
+                    .replace("%player%", player.getDisplayName())
+                    .replace("{player}", player.getDisplayName())
+                    .replace("%player_name%", player.getDisplayName())
+                    .replace("{player_name}", player.getDisplayName()));
         } else if (line.contains("[sound]")) {
             String sound = line.replace("[sound] ", "");
             player.playSound(player.getLocation(), Sound.valueOf(sound), 1, 1);
