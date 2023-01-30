@@ -52,8 +52,13 @@ errorMessages:
 
 others:
 
+  # 쉬프트 + 왼손 동작으로 메뉴를 열 수 있습니다.
   shiftF:
+
+    # 활성 여부
     enabled: false
+
+    # 동작시 실행되는 명령어 + 사운드
     open_settings:
       - '[player] 메뉴 열기 워프'
       - '[sound] ENTITY_PLAYER_LEVELUP'
