@@ -29,11 +29,19 @@ public class MenuTab implements TabCompleter {
             if (player.isOp()) {
                 if (args[0].equals("생성")) return Arrays.asList("<메뉴 이름>");
                 else if (args[0].equals("열기") || args[0].equals("제거"))
-                    return Arrays.asList(new Config("menu/", MenuMain.getPlugin()).getFileNames().toArray(new String[0]));
-            } else {
-                if (args[0].equals("열기"))
-                    return Arrays.asList(new Config("menu/", MenuMain.getPlugin()).getFileNames().toArray(new String[0]));
+                    try {
+                        return Arrays.asList(new Config("menu/", MenuMain.getPlugin()).getFileNames().toArray(new String[0]));
+                    } catch (Exception ignored) {
+                        return Collections.emptyList();
+                    }
             }
+        } else {
+            if (args[0].equals("열기"))
+                try {
+                    return Arrays.asList(new Config("menu/", MenuMain.getPlugin()).getFileNames().toArray(new String[0]));
+                } catch (Exception ignored) {
+                    return Collections.emptyList();
+                }
         }
         return Collections.emptyList();
     }

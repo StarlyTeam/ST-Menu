@@ -4,10 +4,7 @@ import net.starly.core.bstats.Metrics;
 import net.starly.core.data.Config;
 import net.starly.menu.command.MenuCmd;
 import net.starly.menu.command.tabcomplete.MenuTab;
-import net.starly.menu.event.InventoryClickListener;
-import net.starly.menu.event.InventoryCloseListener;
-import net.starly.menu.event.InventoryDragListener;
-import net.starly.menu.event.InventoryMoveListener;
+import net.starly.menu.event.*;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -38,8 +35,8 @@ public class MenuMain extends JavaPlugin {
         // CONFIG
         config = new Config("config", this);
         config.loadDefaultConfig();
-        new Config("example-menu", this).loadDefaultConfig();
         config.setPrefix("messages.prefix");
+        new Config("example-menu", this).loadDefaultConfig();
 
         // COMMAND
         Bukkit.getPluginCommand("menu").setExecutor(new MenuCmd());
@@ -50,6 +47,7 @@ public class MenuMain extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new InventoryCloseListener(), this);
         Bukkit.getPluginManager().registerEvents(new InventoryMoveListener(), this);
         Bukkit.getPluginManager().registerEvents(new InventoryDragListener(), this);
+        Bukkit.getPluginManager().registerEvents(new PlayerSwapHandItemsListener(), this);
     }
 
     public static JavaPlugin getPlugin() {

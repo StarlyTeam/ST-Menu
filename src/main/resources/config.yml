@@ -48,3 +48,12 @@ errorMessages:
 
   # 올바르지 않은 명령어를 입력했을 때 출력되는 메세지
   wrongCommand: "&c명령어 사용법이 올바르지 않습니다."
+
+
+others:
+
+  shiftF:
+    enabled: false
+    open_settings:
+      - '[player] 메뉴 열기 워프'
+      - '[sound] ENTITY_PLAYER_LEVELUP'

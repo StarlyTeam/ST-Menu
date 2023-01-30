@@ -1,6 +1,7 @@
 package net.starly.menu.command;
 
 import net.starly.core.data.Config;
+import net.starly.core.util.StringUtil;
 import net.starly.menu.MenuMain;
 import net.starly.menu.data.MenuData;
 import net.starly.menu.data.MenuEditorData;
@@ -70,7 +71,7 @@ public class MenuCmd implements CommandExecutor {
                 String menuName = args[1];
                 MenuData menu = new MenuData(menuName);
 
-                if (menuName.replaceAll("[ㄱ-ㅎ|가-힣|a-z|A-Z|0-9|]", "").length() != 0) {
+                if (StringUtil.containsSpecialChar(menuName)) {
                     player.sendMessage(config.getMessage("errorMessages.menu.invalidName"));
                     return true;
                 }

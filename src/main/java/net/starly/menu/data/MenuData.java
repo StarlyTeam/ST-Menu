@@ -4,8 +4,6 @@ import net.starly.core.data.Config;
 import net.starly.menu.MenuMain;
 import org.bukkit.Bukkit;
 
-import java.util.HashMap;
-
 public class MenuData {
 
     private final String name;
@@ -18,7 +16,6 @@ public class MenuData {
 
     public void create() {
         config.setInventory(name, Bukkit.createInventory(null, 54, name), name);
-        config.setObject(name + ".items", new HashMap<>());
         config.saveConfig();
     }
 
